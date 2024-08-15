@@ -6,50 +6,24 @@ body {
 }
 
 .card {
+    background-image: url("IMG_4994.JPG");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
     display: none;
     opacity: 0;
     z-index: 1;
     position: relative;
-    width: 500px;
-    height: 600px;
+    min-width: 400px;
+    min-height: 500px;
+    width: 50vw;
+    height: 50vh;
     background-color: #fff;
     transform-style: preserve-3d;
     transform: perspective(1000px);
     box-shadow: 10px 20px 40px rgba(0, 0, 0, .25);
     transition: 1s;
-}
-.card-active-hover:hover {
-    transform: translateX(50%);
-
-}
-
-.card .imgBox{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transform-origin: left;
-    transform-style: preserve-3d;
-    transition: 1s;
-}
-
-.card-active-hover:hover .imgBox {
-    transform: rotateY(-180deg);
-}
-
-.card .imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-}
-
-.card .imgBox img:nth-child(2) {
-    transform: rotateY(-180deg);
 }
 
 .card .details {
@@ -75,10 +49,15 @@ body {
 
 .card .details .content h2 span {
     font: 400 130px/0.8 "Great Vibes", Helvetica, sans-serif;
-    font-size: 2.8em;
+    font-size: 64px;
+}
+
+.card .details .content p span {
+    font: 400 130px/0.8 "Great Vibes", Helvetica, sans-serif;
+    font-size: 64px;
 }
 
 .card .details .content p {
-    font-size: 1.4em;
+    font-size: 16px;
     font-family: sans-serif;
 }
