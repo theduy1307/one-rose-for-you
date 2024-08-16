@@ -15,10 +15,8 @@ body {
     opacity: 0;
     z-index: 1;
     position: relative;
-    min-width: 300px;
-    min-height: 400px;
-    width: 40vw;
-    height: 40vh;
+    width: 80vw;
+    height: 60vh;
     background-color: #fff;
     transform-style: preserve-3d;
     transform: perspective(1000px);
@@ -49,12 +47,12 @@ body {
 
 .card .details .content h2 span {
     font: 400 130px/0.8 "Great Vibes", Helvetica, sans-serif;
-    font-size: 64px;
+    font-size: 40px;
 }
 
 .card .details .content p span {
     font: 400 130px/0.8 "Great Vibes", Helvetica, sans-serif;
-    font-size: 64px;
+    font-size: 40px;
 }
 
 .card .details .content p {
